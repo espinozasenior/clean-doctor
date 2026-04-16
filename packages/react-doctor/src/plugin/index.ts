@@ -13,6 +13,23 @@ import {
 } from "./rules/bundle-size.js";
 import { clientPassiveEventListeners } from "./rules/client.js";
 import {
+  noDarkModeGlow,
+  noDisabledZoom,
+  noGradientText,
+  noGrayOnColoredBackground,
+  noInlineBounceEasing,
+  noInlineExhaustiveStyle,
+  noJustifiedText,
+  noLayoutTransitionInline,
+  noLongTransitionDuration,
+  noOutlineNone,
+  noPureBlackBackground,
+  noSideTabBorder,
+  noTinyText,
+  noWideLetterSpacing,
+  noZIndex9999,
+} from "./rules/design.js";
+import {
   noArrayIndexAsKey,
   noPreventDefault,
   renderingConditionalRender,
@@ -220,6 +237,22 @@ const plugin: RulePlugin = {
     "query-no-query-in-effect": queryNoQueryInEffect,
     "query-mutation-missing-invalidation": queryMutationMissingInvalidation,
     "query-no-usequery-for-mutation": queryNoUseQueryForMutation,
+
+    "no-inline-bounce-easing": noInlineBounceEasing,
+    "no-z-index-9999": noZIndex9999,
+    "no-inline-exhaustive-style": noInlineExhaustiveStyle,
+    "no-side-tab-border": noSideTabBorder,
+    "no-pure-black-background": noPureBlackBackground,
+    "no-gradient-text": noGradientText,
+    "no-dark-mode-glow": noDarkModeGlow,
+    "no-justified-text": noJustifiedText,
+    "no-tiny-text": noTinyText,
+    "no-wide-letter-spacing": noWideLetterSpacing,
+    "no-gray-on-colored-background": noGrayOnColoredBackground,
+    "no-layout-transition-inline": noLayoutTransitionInline,
+    "no-disabled-zoom": noDisabledZoom,
+    "no-outline-none": noOutlineNone,
+    "no-long-transition-duration": noLongTransitionDuration,
   },
 };
 

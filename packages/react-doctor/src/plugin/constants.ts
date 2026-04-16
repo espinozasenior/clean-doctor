@@ -388,3 +388,27 @@ export const LEGACY_SHADOW_STYLE_PROPERTIES = new Set([
   "shadowRadius",
   "elevation",
 ]);
+
+export const BOUNCE_ANIMATION_NAMES = new Set(["bounce", "elastic", "wobble", "jiggle", "spring"]);
+
+export const Z_INDEX_ABSURD_THRESHOLD = 100;
+
+export const INLINE_STYLE_PROPERTY_THRESHOLD = 8;
+
+export const SIDE_TAB_BORDER_WIDTH_WITHOUT_RADIUS_PX = 3;
+
+export const SIDE_TAB_BORDER_WIDTH_WITH_RADIUS_PX = 1;
+
+export const SIDE_TAB_TAILWIND_WIDTH_WITHOUT_RADIUS = 4;
+
+export const DARK_GLOW_BLUR_THRESHOLD_PX = 4;
+
+export const DARK_BACKGROUND_CHANNEL_MAX = 35;
+
+export const COLOR_CHROMA_THRESHOLD = 30;
+
+export const TINY_TEXT_THRESHOLD_PX = 12;
+
+export const WIDE_TRACKING_THRESHOLD_EM = 0.05;
+
+export const LONG_TRANSITION_DURATION_THRESHOLD_MS = 1000;
